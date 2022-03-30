@@ -60,3 +60,10 @@
   font-size: 16px;
   margin-right: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .widgetSm {
+    margin: 20px;
+    padding: 20px;
+  }
+}

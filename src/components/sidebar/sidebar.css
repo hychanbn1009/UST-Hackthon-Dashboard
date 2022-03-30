@@ -1,6 +1,6 @@
 .sidebar {
   flex: 1;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   background-color: rgb(251, 251, 255);
   position: sticky;
   top: 50px;
@@ -43,6 +43,8 @@
   font-size: 20px !important;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
+@media only screen and (max-width: 600px) {
+  .sidebar.false {
+    display: none;
+  }
 }

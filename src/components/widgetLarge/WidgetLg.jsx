@@ -9,36 +9,38 @@ export default function WidgetLg() {
 
   return (
     <div className='widgetLg'>
-        <h3 className="widgetLgTitle">Lasteest complaint</h3>
+        <h3 className="widgetLgTitle">Lastest complaint</h3>
         <table className="widgetLgTable">
-            <tr className="widgetLgTr">
-                <th className="widgetLgTh">Department</th>
-                <th className="widgetLgTh">Date</th>
-                <th className="widgetLgTh">Amount</th>
-                <th className="widgetLgTh">Status</th>
-            </tr>
-            <tr className="widgetLgTr">
-                <td className="widgetLgUser">
-                    <img src="" alt="" className="widgetLgImg" />
-                    <span className="widgetLgName">Susan</span>
-                </td>
-                <td className="widgetLgDate">2 Jun 2022</td>
-                <td className="widgetLgAmount">$10.00</td>
-                <td className="widgetLgStatus">
-                    <Button type="Approved"/>
-                </td>
-            </tr>
-            <tr className="widgetLgTr">
-                <td className="widgetLgUser">
-                    <img src="" alt="" className="widgetLgImg" />
-                    <span className="widgetLgName">Susan</span>
-                </td>
-                <td className="widgetLgDate">2 Jun 2022</td>
-                <td className="widgetLgAmount">$10.00</td>
-                <td className="widgetLgStatus">
-                    <Button type="Approved"/>
-                </td>
-            </tr>
+            <tbody>
+                <tr className="widgetLgTr">
+                    <th className="widgetLgTh">Department</th>
+                    <th className="widgetLgTh">Category</th>
+                    <th className="widgetLgTh">Emotion</th>
+                    <th className="widgetLgTh">Status</th>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img src="" alt="" className="widgetLgImg" />
+                        <span className="widgetLgName">Sales</span>
+                    </td>
+                    <td className="widgetLgCategory">Internet Issue</td>
+                    <td className="widgetLgEmotion">Angry</td>
+                    <td className="widgetLgStatus">
+                        <Button type="Approved"/>
+                    </td>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img src="" alt="" className="widgetLgImg" />
+                        <span className="widgetLgName">Marketing</span>
+                    </td>
+                    <td className="widgetLgCategory">Benefits</td>
+                    <td className="widgetLgEmotion">Happy</td>
+                    <td className="widgetLgStatus">
+                        <Button type="Pending"/>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
   )

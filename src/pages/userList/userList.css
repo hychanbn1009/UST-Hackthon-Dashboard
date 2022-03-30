@@ -1,3 +1,8 @@
+.userList {
+  flex: 4;
+  min-width: 0;
+}
+
 .userListUser {
   display: flex;
   align-items: center;

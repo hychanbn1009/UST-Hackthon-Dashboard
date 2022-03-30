@@ -6,7 +6,7 @@ export default function Chart({ title, data, dataKey, xAxis,grid }) {
   return (
     <div className='chart'>
         <h3 className="chartTitle">{title}</h3>
-        <ResponsiveContainer width="100%" aspect={4/1}>
+        <ResponsiveContainer width="100%" height={300}>
         <LineChart
           width={500}
           height={300}

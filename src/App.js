@@ -3,20 +3,29 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Homepage from "./pages/home/Homepage";
 import UserList from "./pages/userList/UserList";
 import "./app.css"
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import {Routes,Route,} from "react-router-dom";
+import { useState } from "react";
+import DataSummary from "./pages/summary/DataSummary";
 
 function App() {
+
+  const [togglerSideBar,setTogglerSideBar] =useState(false)
+
   return (
-    <div class="App">
-      <Header/>
+    <div className="app">
+      <Header 
+      togglerSideBar={togglerSideBar}
+      setTogglerSideBar={setTogglerSideBar}
+      />
       <div className="container">
-        <Sidebar/>
+        <Sidebar
+        togglerSideBar={togglerSideBar}
+        setTogglerSideBar={setTogglerSideBar}
+        />
         <Routes>
           <Route path="/" element={<Homepage/>}/>
-          <Route path="/users" element={<UserList/>}/>
+          <Route path="/summary" element={<DataSummary/>}/>
+          <Route path="/department" element={<UserList/>}/>
         </Routes>
       </div>
     </div>
