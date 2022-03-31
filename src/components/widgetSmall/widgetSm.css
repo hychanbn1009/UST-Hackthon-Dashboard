@@ -32,16 +32,16 @@
   margin: 20px 0px;
 }
 
-.widgetSmUser {
+.widgetSmIssue {
   display: flex;
   flex-direction: column;
 }
 
-.widgetSmUsername {
+.widgetSmIssueName {
   font-weight: 600;
 }
 
-.widgetSmUserTitle {
+.widgetSmIssueCategory {
   font-weight: 300;
 }
 

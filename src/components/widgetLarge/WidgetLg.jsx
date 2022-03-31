@@ -20,7 +20,6 @@ export default function WidgetLg() {
                 </tr>
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
-                        <img src="" alt="" className="widgetLgImg" />
                         <span className="widgetLgName">Sales</span>
                     </td>
                     <td className="widgetLgCategory">Internet Issue</td>
@@ -31,7 +30,6 @@ export default function WidgetLg() {
                 </tr>
                 <tr className="widgetLgTr">
                     <td className="widgetLgUser">
-                        <img src="" alt="" className="widgetLgImg" />
                         <span className="widgetLgName">Marketing</span>
                     </td>
                     <td className="widgetLgCategory">Benefits</td>

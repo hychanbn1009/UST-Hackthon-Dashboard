@@ -11,6 +11,12 @@ function App() {
 
   const [togglerSideBar,setTogglerSideBar] =useState(false)
 
+  const closeSidebar=()=>{
+    if(togglerSideBar==true){
+      setTogglerSideBar(false)
+    }
+  }
+
   return (
     <div className="app">
       <Header 
@@ -22,11 +28,13 @@ function App() {
         togglerSideBar={togglerSideBar}
         setTogglerSideBar={setTogglerSideBar}
         />
+        <div className="mainpage" onClick={()=>closeSidebar()}>
         <Routes>
-          <Route path="/" element={<Homepage/>}/>
-          <Route path="/summary" element={<DataSummary/>}/>
-          <Route path="/department" element={<UserList/>}/>
+            <Route path="/" element={<Homepage/>}/>
+            <Route path="/summary" element={<DataSummary/>}/>
+            <Route path="/department" element={<UserList/>}/>
         </Routes>
+        </div>
       </div>
     </div>
   );

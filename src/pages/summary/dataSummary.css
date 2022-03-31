@@ -2,3 +2,13 @@
   flex: 4;
   min-width: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .dataSummary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
