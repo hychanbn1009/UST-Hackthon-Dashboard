@@ -10,24 +10,34 @@ export default function Sidebar(props) {
     <div className={'sidebar '+props.togglerSideBar}>
         <div className="sidebarWrapper">
             <div className="sidebarMenu">
-                <h3 className="sidebarTitle">Dashboard</h3>
+                <h3 className="sidebarTitle">Company</h3>
                 <ul className="sidebarList">
                     <Link to="/" className="link">
                         <li className="sidebarListItem">
-                            <HomeIcon className="sidebarIcon"/>Home
+                            <HomeIcon className="sidebarIcon"/>Company 
                         </li>
                     </Link>
-                    <Link to="/summary" className="link">
+                    <Link to="company/department" className="link">
+                        <li className="sidebarListItem">
+                            <TimelineIcon className="sidebarIcon"/>Department
+                        </li>
+                    </Link>
+                </ul>
+                <h3 className="sidebarTitle">Client</h3>
+                <ul className="sidebarList">
+                    <Link to="/client" className="link">
+                        <li className="sidebarListItem">
+                            <HomeIcon className="sidebarIcon"/>Client
+                        </li>
+                    </Link>
+                    <Link to="/client/summary" className="link">
                         <li className="sidebarListItem">
                             <TimelineIcon className="sidebarIcon"/>Summary
                         </li>
                     </Link>
-                </ul>
-                <h3 className="sidebarTitle">Staff</h3>
-                <ul className="sidebarList">
-                    <Link to="/department" className="link">
+                    <Link to="/client/list" className="link">
                         <li className="sidebarListItem">
-                            <PeopleAltIcon className="sidebarIcon"/>Members
+                            <PeopleAltIcon className="sidebarIcon"/>Client List
                         </li>
                     </Link>
                 </ul>

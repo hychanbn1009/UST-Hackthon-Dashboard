@@ -1,0 +1,8 @@
+.selector {
+    flex: 1;
+    min-height: calc(100vh - 50px);
+    background-color: rgb(251, 251, 255);
+    top: 50px;
+    position: sticky;
+    align-self: flex-start;
+  }

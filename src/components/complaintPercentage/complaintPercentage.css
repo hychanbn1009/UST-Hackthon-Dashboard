@@ -5,6 +5,7 @@
   border-radius: 10px;
   -webkit-box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
   box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
 }
 
 @media only screen and (max-width: 768px) {

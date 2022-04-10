@@ -9,7 +9,12 @@ export default function ComplaintPercentage() {
     const getRandomColor=()=>{
         for (let i = 0; i < testData.length; i++) {
             const color='#'+(Math.random()*0xFFFFFF<<0).toString(16);
-            COLORS.push(color)
+            if (!(color in COLORS)){
+              COLORS.push(color)
+            }
+            else{
+              i--
+            }
         }
     }
 

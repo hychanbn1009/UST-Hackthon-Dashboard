@@ -4,7 +4,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Responsi
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-export default function FeaturedInfo() {
+export default function FeaturedInfo(props) {
 
     const data = [
         {
@@ -50,7 +50,7 @@ export default function FeaturedInfo() {
         <div className="featuredItem">
             <span className="featuredTitle">Number of Complaint</span>
             <div className="featuredContainer">
-                <span className="featuredNumber">200</span>
+                <span className="featuredNumber">{props.complaintNumber}</span>
                 <span className="featuredRate">-20<ArrowDownwardIcon className="featuredIcon negative"/></span>
             </div>
             <span className="featuredSub">Compared to last month</span>
@@ -58,7 +58,7 @@ export default function FeaturedInfo() {
         <div className="featuredItem">
             <span className="featuredTitle">Daily Active User</span>
             <div className="featuredContainer">
-                <span className="featuredNumber">405</span>
+                <span className="featuredNumber">{props.dailyActiveUser}</span>
                 <span className="featuredRate">11<ArrowUpwardIcon className="featuredIcon"/></span>
             </div>
             <span className="featuredSub">Compared to last month</span>
