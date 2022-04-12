@@ -1,12 +1,47 @@
+.chartContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  transition: all 1s;
+  min-height: 20vh;
+  margin: 20px 0px;
+}
+
 .chart {
+  flex: 4;
   margin: 20px;
   padding: 20px;
-  min-height: 20vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
+  box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
+  min-width: 0;
+}
+
+.chartTitle {
+  margin-bottom: 20px;
+}
+
+.chartSelectorContainer{
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
   -webkit-box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
   box-shadow: 4px 1px 15px 4px rgba(0, 0, 0, 0.22);
 }
 
-.chartTitle {
-  margin-bottom: 20px;
+.chartIssueSelectorGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .chartContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .chartSelectorContainer {
+    margin-top: 20px;
+  }
 }
