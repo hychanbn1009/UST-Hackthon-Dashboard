@@ -8,7 +8,6 @@ export default function DataSummary() {
     <div className='dataSummary'>
       <div className='homeWidgets'>
         <ComplaintPercentage/>
-        <MeasurementChart/>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Icon from '../../assets/images/doge.png'
 
 export default function Header(props){
 
@@ -15,7 +16,7 @@ export default function Header(props){
                         {props.togglerSideBar?<CloseIcon/>:<MenuIcon/>}
                         
                     </span>
-                    <span className="logo">Why Not</span>
+                    <img src={Icon} className="logo"></img>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">

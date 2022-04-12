@@ -5,53 +5,13 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function FeaturedInfo(props) {
-
-    const data = [
-        {
-          subject: 'Math',
-          A: 120,
-          B: 110,
-          fullMark: 150,
-        },
-        {
-          subject: 'Chinese',
-          A: 98,
-          B: 130,
-          fullMark: 150,
-        },
-        {
-          subject: 'English',
-          A: 86,
-          B: 130,
-          fullMark: 150,
-        },
-        {
-          subject: 'Geography',
-          A: 99,
-          B: 100,
-          fullMark: 150,
-        },
-        {
-          subject: 'Physics',
-          A: 85,
-          B: 90,
-          fullMark: 150,
-        },
-        {
-          subject: 'History',
-          A: 65,
-          B: 85,
-          fullMark: 150,
-        },
-    ];
-
   return (
     <div className="featured">
         <div className="featuredItem">
-            <span className="featuredTitle">Number of Complaint</span>
+            <span className="featuredTitle">Revenue</span>
             <div className="featuredContainer">
-                <span className="featuredNumber">{props.complaintNumber}</span>
-                <span className="featuredRate">-20<ArrowDownwardIcon className="featuredIcon negative"/></span>
+                <span className="featuredNumber">$16.5M</span>
+                <span className="featuredRate">1M<ArrowUpwardIcon className="featuredIcon"/></span>
             </div>
             <span className="featuredSub">Compared to last month</span>
         </div>
@@ -60,6 +20,14 @@ export default function FeaturedInfo(props) {
             <div className="featuredContainer">
                 <span className="featuredNumber">{props.dailyActiveUser}</span>
                 <span className="featuredRate">11<ArrowUpwardIcon className="featuredIcon"/></span>
+            </div>
+            <span className="featuredSub">Compared to last month</span>
+        </div>
+        <div className="featuredItem">
+            <span className="featuredTitle">Number of Complaint</span>
+            <div className="featuredContainer">
+                <span className="featuredNumber">{props.complaintNumber}</span>
+                <span className="featuredRate">-20<ArrowDownwardIcon className="featuredIcon negative"/></span>
             </div>
             <span className="featuredSub">Compared to last month</span>
         </div>

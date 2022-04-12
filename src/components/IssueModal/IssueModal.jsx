@@ -32,8 +32,8 @@ export default function IssueModal(props) {
               if(data.issueCategory==props.modalData.category){
                 return(
                   <div className='solutionItem' key={index}>
-                    <p>Solution: {data.solution}</p>
-                    <p>{data.percentage} of Company are using this!</p>
+                    <h3>Solution: {data.solution}</h3>
+                    <h4>{data.percentage} of Company are using this!</h4>
                     {data.website?<a href={data.website} target="_blank">For more details</a>:("")}
                   </div>
                 )
